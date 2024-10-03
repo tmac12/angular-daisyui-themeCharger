@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          ls
+          cd daisyThemeCharger
           npm install
           npm run build:prod
 
