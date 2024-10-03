@@ -19,7 +19,10 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm ci
+        run: |
+          cd ..
+          npm install
+          npm run build:prod
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
